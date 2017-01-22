@@ -177,7 +177,7 @@ a.btn-selected {
     height: 420px;
     position: relative;
     display: block;
-    background-image: url(/img/header_desktop.png);
+    background-image: url(img/header_desktop.png);
     background-position: center;
 }
 
