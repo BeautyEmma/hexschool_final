@@ -177,9 +177,10 @@ a.btn-selected {
     height: 420px;
     position: relative;
 /*    display: block;*/
-/*    background-image:url(/img/header.png);*/
+    background-image:url(../img/header.png);
     background-position: center;
 }
+/*
 .pic{
     background-image: url(img/header.png);
     height: auto;
@@ -187,6 +188,7 @@ a.btn-selected {
     height: 420px;
     background-position: center;
 }
+*/
 
 .logo img {
     width: 120px;
