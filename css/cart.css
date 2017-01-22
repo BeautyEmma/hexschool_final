@@ -1,0 +1,377 @@
+/*
+//NOTE:字體深紅色碼 : #3D1101
+//NOTE:footer顏色 : rgb(239,233,231)
+//NOTE: 橘色色碼 : rgb(255, 94, 69)
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,,samp,small,strikestrong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embedfigure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    font-family: 微軟正黑體;
+    color: #3D1101;
+}
+
+input{
+    border-style: none;
+}
+
+/*--------------reset結束------------------*/
+
+/*--------------pure btn start------------------*/
+
+/*!
+Pure v0.6.1
+Copyright 2013 Yahoo!
+Licensed under the BSD License.
+https://github.com/yahoo/pure/blob/master/LICENSE.md
+*/
+.btn {
+    /* Structure */
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    box-sizing: border-box;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.btn::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/*csslint outline-none:false*/
+
+.btn {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 8%;
+}
+
+.btn-hover,
+.btn:hover,
+.btn:focus {
+    /* csslint ignore:start */
+    filter: alpha(opacity=90);
+    /* csslint ignore:end */
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.btn:focus {
+    outline: 0;
+}
+.btn-active,
+.btn:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    border-color: #000\9;
+}
+
+.btn[disabled],
+.btn-disabled,
+.btn-disabled:hover,
+.btn-disabled:focus,
+.btn-disabled:active {
+    border: none;
+    background-image: none;
+    /* csslint ignore:start */
+    filter: alpha(opacity=40);
+    /* csslint ignore:end */
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.btn-hidden {
+    display: none;
+}
+
+.btn-primary,
+.btn-selected,
+a.btn-primary,
+a.btn-selected {
+    background-color: rgb(0, 120, 231);
+    color: #fff;
+    width: 8%;
+    
+}
+
+
+/*--------------pure btn end------------------*/
+
+
+/*--------------整塊------------------*/
+.container {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: rgb(239, 234, 231);
+    float: left;
+}
+
+
+/*--------------list左邊清單區------------------*/
+
+.list {
+    width: 25%;
+    float: left;
+}
+
+.list h2 {
+    margin-left: 15%;
+    margin-top: 45px;
+}
+
+.list ul li {
+    height: auto;
+    width: 100%;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+}
+
+.list ul li a {
+    color: #3D1101;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.list ul li:hover,
+.list ul li a:hover {
+    background-color: #3D1101;
+    color: white;
+}
+
+@media(max-width:414px) {
+    .list {
+        width: 90%;
+    }
+    .list ul li:touch,
+    .list ul li a:touch {
+        background-color: #3D1101;
+        color: white;
+    }
+}
+
+
+/*--------------bar右邊上面搜尋、結帳------------------*/
+
+.bar {
+    width: 65%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.bar input {
+    width: 80%;
+    height: 30px;
+    border: 2px solid #3D1101;
+    font-size: 18px;
+}
+
+#search {
+    font-size: 22px;
+    line-height: 16px;
+    background-color: #3D1101;
+    color: white;
+    padding: 7px 10px 13px 10px;
+}
+
+.bar a {
+    float: right;
+    color: #3D1101;
+    font-size: 16px;
+}
+
+#cart {
+    font-size: 40px;
+}
+
+@media(max-width:414px) {
+    .bar {
+        width: 90%;
+    }
+    .bar input {
+        width: 80%;
+    }
+    #cart {
+        margin-top: 10%;
+    }
+}
+
+/*--------------product商品區------------------*/
+
+.product {
+    width: 74%;
+    float: left;
+    margin-top: 10px;
+}
+
+.product ul {
+    float: left;
+}
+
+.product ul li {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    box-shadow: 5px 4px 4px #c7c7c7;
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+    color: white;
+    font-size: 25px;
+}
+
+.heart:hover {
+    color: red;
+}
+
+.product ul li img {
+    width: 100%;
+}
+
+.product h2,
+.product p,
+.product h3 {
+    text-align: center;
+}
+
+.product h2,
+.product h3 {
+    font-size: 20px;
+}
+
+.product p {
+    font-size: 12px;
+}
+
+.price {
+    font-family: Roboto-Light;
+    font-style: italic;
+}
+
+.product hr {
+    width: 50%;
+    color: #3D1101;
+    border: 1px solid #3D1101;
+}
+
+.buy {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buy a {
+    height: auto;
+    margin: auto;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid rgb(255, 94, 69);
+    border-radius: 5px;
+    padding: 4%;
+    color: rgb(255, 94, 69);
+}
+
+.buy a:hover {
+    background-color: rgb(255, 94, 69);
+    color: white;
+}
+
+@media(max-width:414px) {
+    .product {
+        width: 100%;
+        float: none;
+    }
+    .product ul {
+        float: none;
+    }
+    .product ul li {
+        width: 90%;
+    }
+    .buy {
+        margin-bottom: 10%;
+    }
+    .buy a:touch {
+        background-color: rgb(255, 94, 69);
+        color: white;
+    }
+}
+
+/*
+//TODO iPad - 768px
+//TODO iPad以下 - 767px(767以下才視為手機版本)
+//TODO iPhone 6 Plus  -  414px (視專案族群)
+//TODO iPone 6 - 375px  (視專案族群)
+//TODO iPone 5、SE - 320px
+*/
