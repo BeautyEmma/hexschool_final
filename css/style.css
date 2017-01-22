@@ -176,9 +176,15 @@ a.btn-selected {
     width: 100%;
     height: 420px;
     position: relative;
-    display: block;
-/*    background-image: url(img/header.png);*/
-    background-image:url(img/header.png);
+/*    display: block;*/
+/*    background-image:url(/img/header.png);*/
+    background-position: center;
+}
+.pic{
+    background-image: url(img/header.png);
+    height: auto;
+    display:block;
+    height: 420px;
     background-position: center;
 }
 
