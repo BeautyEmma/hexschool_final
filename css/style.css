@@ -568,7 +568,7 @@ a.btn-selected {
     float: left;
     margin-left: 3%;
     margin-right: 3%;
-    background-image: url(/img/Map.png);
+    background-image: url("../img/Map.png");
     background-position: center;
         
 }
